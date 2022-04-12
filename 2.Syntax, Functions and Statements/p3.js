@@ -1,15 +1,24 @@
 function solve(num){
     let text= String(num);
-    for (let i = 0; i <= text.length; i++) {
+    let sum = 0;
+    let isTrue = true;
+    for (let i = 0; i < text.length; i++) {
+        let num = text[i];
+        sum += Number(num); 
         if(text[i+1]!=null){
             if(text[i]!=text[i+1]){
-                console.log('false') ;
-                return;
+                isTrue = false;
             }
         }
         
     }
-    console.log('true') ;
+    if(isTrue){
+        console.log(isTrue);
+    }else{
+        console.log(isTrue);
+    }
+    console.log(sum);
+
 }
-solve(555555555155);
-solve(11111111111111);
+solve(2222222);
+solve(1234);
