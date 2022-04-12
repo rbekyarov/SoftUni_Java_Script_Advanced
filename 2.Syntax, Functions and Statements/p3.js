@@ -12,11 +12,10 @@ function solve(num){
         }
         
     }
-    if(isTrue){
-        console.log(isTrue);
-    }else{
-        console.log(isTrue);
-    }
+    
+    
+    console.log(isTrue);
+    
     console.log(sum);
 
 }
