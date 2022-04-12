@@ -2,15 +2,10 @@ function solve( inputArr) {
     let sum =0;
     let sumInversValue =0;
     let concanete = "";
-    let arr = [];
-    for (let i = 0; i < inputArr.length; i++) {
-        arr.push(inputArr[i]);
-    }
-      
-     for (let i = 0; i < arr.length; i++) {
-        sum += Number(arr[i]);
-        sumInversValue +=Number(1/arr[i]);
-        concanete += String(arr[i]);
+     for (let i = 0; i < inputArr.length; i++) {
+        sum += Number(inputArr[i]);
+        sumInversValue +=Number(1/inputArr[i]);
+        concanete += String(inputArr[i]);
      }
      console.log(sum);
      console.log(sumInversValue.toFixed(4));
