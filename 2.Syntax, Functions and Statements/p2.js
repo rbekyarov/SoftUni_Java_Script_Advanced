@@ -5,8 +5,8 @@ function solve (num1,num2){
         let result1 = Number(num1)/i;        
         let result2 = Number(num2)/i;
         
-        if(Number.isInteger(result1)&&Number.isInteger(result2)){
-            console.log(i);
+        if(Number.isInteger(result1) && Number.isInteger(result2)){
+            console.log(i);//най голям общ делител
             break;
         }        
     }
