@@ -1,9 +1,10 @@
-function solve(num, operator1, operator2, operator3, operator4, operator5){
+
+function solve(num, command1, command2, command3, command4, command5){
     
     let number = Number(num);
-    let input = [operator1, operator2, operator3, operator4, operator5];
+    let commands = [command1, command2, command3, command4, command5];
 
-    for(command of input){
+    for(command of commands){
         switch(command){
             case 'chop':
                 number /=2;
