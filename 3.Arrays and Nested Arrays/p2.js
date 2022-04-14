@@ -1,11 +1,14 @@
 function solve(n, k) {
-    
+
     let arr = [1];
-    
-    for (let i = 0; i < n-1; i++) {
-        let sum=0;
+
+    for (let i = 0; i < n - 1; i++) {
+
+        let sum = 0;
+
         for (let j = 0; j < k; j++) {
-            if(j >= arr.length){
+
+            if (j >= arr.length) {
                 continue;
             }
             sum += arr[arr.length - 1 - j];
