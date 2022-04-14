@@ -1,6 +1,6 @@
 function solve(arr) {
     let arrResult = [];
-    
+
 
     for (let i = 0; i < 2; i++) {
         let currentMinElement = Math.min.apply(Math, arr) //най - малкото число в масива
