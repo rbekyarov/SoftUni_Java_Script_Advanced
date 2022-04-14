@@ -1,8 +1,9 @@
-function solve( inputArr) {
+function solve(inputArr) {
     let sum =0;
     let sumInversValue =0;
     let concanete = "";
-     for (let i = 0; i < inputArr.length; i++) {
+     
+    for (let i = 0; i < inputArr.length; i++) {
         sum += Number(inputArr[i]);
         sumInversValue +=Number(1/inputArr[i]);
         concanete += String(inputArr[i]);
