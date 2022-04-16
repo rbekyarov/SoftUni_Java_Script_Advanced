@@ -15,7 +15,7 @@ function solve(array){
         console.log(element);
     }  
  } else{
-     console.log('empty');
+     console.log('Empty');
  }
  
 }
