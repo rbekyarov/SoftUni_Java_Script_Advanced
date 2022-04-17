@@ -5,8 +5,7 @@ function solve(name,population,treasury){
         population:population,
         treasury:treasury
     };
-    //console.log(city);
-    console.log(city.population);
+    
     return city;
    
 }
