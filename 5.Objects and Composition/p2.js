@@ -7,7 +7,7 @@ function solve(input) {
         if (!towns[townName]) {
             towns[townName] = 0;
         }
-        towns[townName] +=townPopulation;
+        towns[townName] += townPopulation;
     }
 
     for (let town in towns) {
@@ -18,8 +18,8 @@ function solve(input) {
 
 
 solve(['Istanbul <-> 100000',
-   'Honk Kong <-> 2100004',
- 'Jerusalem <-> 2352344',
- 'Mexico City <-> 23401925',
-  'Istanbul <-> 1000'
+    'Honk Kong <-> 2100004',
+    'Jerusalem <-> 2352344',
+    'Mexico City <-> 23401925',
+    'Istanbul <-> 1000'
 ]);
