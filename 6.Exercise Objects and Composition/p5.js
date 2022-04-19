@@ -1,10 +1,10 @@
-function solve(array){
-       
-    let inputArray = array.slice();
+function solve(array) {
+
+    let arrayCopy = array.slice();
     let products = [];
 
-    while (inputArray.length > 0) {
-        let [town, product, price] = inputArray.shift().split(' | ');
+    while (arrayCopy.length > 0) {
+        let [town, product, price] = arrayCopy.shift().split(' | ');
         if (products.filter(x => x.product === product).length > 0) {
             let obj = products.find(x => x.product === product);
             if (obj.price > Number(price)) {
@@ -13,7 +13,11 @@ function solve(array){
             }
         } else {
             let prc = Number(price);
-            let obj = { town, product, price: prc };
+            let obj = {
+                town,
+                product,
+                price: prc
+            };
             products.push(obj);
         }
     }
@@ -23,10 +27,10 @@ function solve(array){
 };
 
 solve(['Sample Town | Sample Product | 1000',
-'Sample Town | Orange | 2',
-'Sample Town | Peach | 1',
-'Sofia | Orange | 3',
-'Sofia | Peach | 2',
-'New York | Sample Product | 1000.1',
-'New York | Burger | 10']
-);
+    'Sample Town | Orange | 2',
+    'Sample Town | Peach | 1',
+    'Sofia | Orange | 3',
+    'Sofia | Peach | 2',
+    'New York | Sample Product | 1000.1',
+    'New York | Burger | 10'
+]);
