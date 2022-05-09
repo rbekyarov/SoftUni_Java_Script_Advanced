@@ -9,30 +9,25 @@ let person = {
 const car = {type:"Fiat", model:"500", color:"white"};
 
 
-
------- dot-notation-------
+- -----Достъпване:---------
+--dot-notation
 let person = { name: 'Peter' };
 console.log(person.name); // Peter
 
 
 
-------Bracket-notation-------
+--Bracket-notation
 person['job-title'] = 'Trainer';
 console.log(person['job-title']) // Trainer
 console.log(person.job-title)    // ReferenceError
 
-
-
------Destructuring Syntax-----
-let department = {
-  name: 'Engineering',
-  director: 'Ted Thompson',
-  employeeCount: 25
+--Добавяне на ново пропърти:
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50
 };
-let { name, employeeCount } = department;
-console.log(name, employeeCount); // 'Engineering' 25
-
-
+person.midlleName = 'Patrick';
 
 
 ----Deleting Properties-----
@@ -46,7 +41,24 @@ delete person.age; 
 // Object {name: 'Peter', 'job-title': 'Trainer' }
 console.log(person.age) // undefined
 
+--------Копиране на Обект---------
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50
+};
 
+let copyObject = JSON.parse(JSON.stringify(person));
+
+
+-----Destructuring Syntax-----
+let department = {
+  name: 'Engineering',
+  director: 'Ted Thompson',
+  employeeCount: 25
+};
+let { name, employeeCount } = department;
+console.log(name, employeeCount); // 'Engineering' 25
 
 ---------Associative Arrays----------
  
@@ -65,23 +77,29 @@ console.log(values);
 // ['555-111', '555-333', '555-777']
 
 
---Object.entries
+--Object.entries - връща масив от масиви със стойностите и ключовете
 const entries = Object.entries(phonebook);
 console.log(entries);
 // [ ['Tim', '555-111'],
 //   ['Bill', '555-333'],
 //   ['Peter', '555-777'] ]
 
+entries[0] - ще върне масива на 0-вия ред ->['Tim', '555-111']
+entries[0][0] - ще върне ключа на 0-вия елемент -> 'Tim'
+entries[0][1] - ще върне стойноста на 0-вия елемент -> '555-111'
 
- ---FOR-IN - итериране в обекти
-const obj = {a: 1, b: 2, c: 3};
-for (const key in obj) {
-  console.log(`obj.${key} = ${obj[key]}`);
+
+
+ ----------------FOR-IN - итериране в обекти-------------
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50
+};
+for(element in person){
+  console.log(element); -- ще отпечата ключовете !
+  console.log(person[element]); -- ще отпечата стойностите !
 }
-// Output:
-// "obj.a = 1"
-// "obj.b = 2"
-// "obj.c = 3"
 
 
 
