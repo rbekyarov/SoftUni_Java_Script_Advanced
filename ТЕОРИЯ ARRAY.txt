@@ -52,8 +52,8 @@ console.log(nums.unshift(10,20)); // 6 (nums.length)
 
 
 - Splice - премахва или заменя елемент/и и добавя нови елементи
-let nums = [1, 3, 4, 5, 6];
-nums.splice(1, 0, 2); // inserts at index 1
+let nums =[1,3,4,5,6];
+nums.splice(1,0,2);// inserts at index 1
 console.log(nums); // [ 1, 2, 3, 4, 5, 6 ]
 nums.splice(4, 1, 19); // replaces 1 element at index 4
 console.log(nums); // [ 1, 2, 3, 4, 19, 6 ]
@@ -93,10 +93,10 @@ words.sort((a, b) => a.localeCompare(b));
 
 
 - Join
-let elements = ['Fire', 'Air', 'Water'];
-console.log(elements.join()); // "Fire,Air,Water"
-console.log(elements.join('')); // "FireAirWater"
-console.log(elements.join('-')); // "Fire-Air-Water"
+let elements = ['Fire', 'Air', 'Water'];
+console.log(elements.join()); // "Fire,Air,Water"
+console.log(elements.join('')); // "FireAirWater"
+console.log(elements.join('-')); // "Fire-Air-Water"
 console.log(['Fire'].join(".")); // Fire
 
 
@@ -128,7 +128,7 @@ arr.includes('a', -2); // false
 
 
 - IndexOf - връща първия индекс, при който даден елемент може да бъде намерен в масива
-const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+const beasts = ['ant','bison','camel','duck','bison'];
 console.log(beasts.indexOf('bison')); // 1
 // start from index 2
 console.log(beasts.indexOf('bison', 2)); // 4

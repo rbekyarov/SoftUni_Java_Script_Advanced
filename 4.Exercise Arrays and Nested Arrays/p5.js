@@ -1,17 +1,17 @@
 function solve(input) {
-    
+
     let currentMaxNumber = input[0];
     let result = [];
-    
+
     for (let currentNumber of input) {
         if (currentNumber >= currentMaxNumber) {
             result.push(currentNumber);
             currentMaxNumber = currentNumber;
         }
     }
-    console.log(result);
+    //console.log(result);
     return result;
-    
+
 }
 
 solve([1,
@@ -25,10 +25,10 @@ solve([1,
     24
 ]);
 
-solve([20, 
-    3, 
-    2, 
+solve([20,
+    3,
+    2,
     15,
-    6, 
-    1]
-    );
+    6,
+    1
+]);
