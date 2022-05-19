@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(236, 227, 152);
+    color: rgb(22, 21, 21);
+}
+
+main {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(88, 85, 85);
+    color: rgb(20, 20, 19);
+}
+
+nav span a {
+    color: rgb(184, 9, 9);
+    padding-right: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+nav {
+    background-color: rgb(207, 224, 175);
+    text-align: center;
+}
