@@ -10,14 +10,16 @@ function solve(array, n) {
     return arr;
 }
 
-solve(['5',
-        '20',
-        '31',
-        '4',
-        '20'
-    ],
-    2
-);
+
+console.log(
+    solve(['5',
+            '20',
+            '31',
+            '4',
+            '20'
+        ],
+        2
+    ));
 
 solve(['dsa',
         'asd',

@@ -1,15 +1,7 @@
-const phonebook = { 'Tim': '555-111',
-                    'Bill': '555-333',
-                    'Peter': '555-777' };
-const keys = Object.keys(phonebook);
-console.log(keys);
+let arr = [5, 5, 6, 2];
 
-const entries = Object.entries(phonebook);
-console.log(entries);
-// [ ['Tim', '555-111'],
-//   ['Bill', '555-333'],
-//   ['Peter', '555-777'] ]
-
-console.log(entries[0])// - ще върне масива на 0-вия ред ->['Tim', '555-111']
-console.log(entries[0][0])// - ще върне ключа на 0-вия елемент -> 'Tim'
-console.log(entries[0][1])// - ще върне стойноста на 0-вия елемент -> '555-111'
+let s = arr.slice();
+s.push(arr, 4)
+console.log(arr);
+console.log(s);
+console.log(s != arr);
