@@ -47,6 +47,14 @@ let funcEventHandler = (event) =>{
 domElement.addEventListener('click', funcEventHandler)
 
 
+------PREVENT DEFAULT -----
+Ако бутона е от тип субмит се налага да използваме preventDefault()
+
+buton.addEventListener('click', (event) => { 
+    event.preventDefault()-> браузърат няма да се презарежда 
+    event.target.perentElement
+
+
 ----Премахване на EVENT ----- 
 
 domElement.removeEventListener( 'click' ,funcEventHandler);
@@ -55,7 +63,8 @@ domElement.removeEventListener( 'click' ,funcEventHandler);
 ---- Достъп до EVENT object ----
 
 domElement.addEventListener('click', (event) => {
-    event.currentTarget.->така имаме достъп то текущия елемент на който се е задейсвтало събитието
+    event.currentTarget.->така имаме достъп то текущия елемент
+     на който се е задейсвтало събитието
     --JS логика при клик
 });
 

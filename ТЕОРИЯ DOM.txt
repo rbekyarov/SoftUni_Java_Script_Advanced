@@ -85,3 +85,14 @@ town.style.fontWeight = 'bold';
 town.style.textDecoration = 'underline';
 town.style.fontWeight = 'normal';
 town.style.textDecoration = 'none';
+
+----- ПРИЛАГАНЕ НА CSS КЛАС ВЪРХУ ЕЛЕМЕНТ -----
+
+element.className = 'select'; // прилага css стил върху елемент
+element.classList.remove('select');// премахва css стил върху елемент
+
+
+
+----- Вземане на елементи по два критерия и връщане в масив----
+
+let arr = Array.from(document.getElementById('id').querySelectorAll('input'))

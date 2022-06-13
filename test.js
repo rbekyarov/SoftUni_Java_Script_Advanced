@@ -1,7 +1,31 @@
-let arr = [5, 5, 6, 2];
+function personInfo(person) {
+    return `Name: ${person.name}, Age: ${person.age}, Sex: ${person.sex}`
+};
 
-let s = arr.slice();
-s.push(arr, 4)
-console.log(arr);
-console.log(s);
-console.log(s != arr);
+function adressInfo(person) {
+    return `Country: ${person.adress.country}, City: ${person.adress.city}`
+};
+const person = {
+    name: 'Stan',
+    age: 18,
+    sex: 'M',
+
+    adress: { country: 'Bulgaria', city: 'Sofia' },
+
+
+};
+
+const person2 = {
+    name: 'Joo',
+    age: 54,
+    sex: 'M',
+
+    adress: { country: 'Bulgaria', city: 'Sliven' },
+
+
+};
+console.log(personInfo(person));
+console.log(adressInfo(person));
+console.log('-----------');
+console.log(personInfo(person2));
+console.log(adressInfo(person2));

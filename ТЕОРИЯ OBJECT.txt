@@ -29,6 +29,31 @@ let person = {
 };
 person.midlleName = 'Patrick';
 
+----Пълнене на Обект от масив--------
+
+function solve(arr) {
+    const obj = {};
+    while (arr.length != 0) {
+        let product = arr.shift();
+        let calories = Number(arr.shift());
+        obj[product] = calories;
+    }
+    console.log(obj)
+}
+solve(['Yoghurt', '48', 'Rise', '138', 'Apple', '52'])
+
+
+-----------Обхождане и разпечатване на обект ----------
+
+const obj = { Potato: 93, Skyr: 63, Cucumber: 18, Milk: 42 }
+for (const key in obj) {
+        console.log(`${key} -> ${obj[key]}`)
+    }
+Potato -> 93
+Skyr -> 63
+Cucumber -> 18
+Milk -> 42
+
 
 ----Deleting Properties-----
 let person = {
